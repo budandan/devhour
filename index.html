@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Elon Musk's Official Dev Bro Discord" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+<link rel="icon" href="favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <title>Welcome to Dev Hour!</title>
+    <style>
+        body {
+            font-family: 'Roboto Mono';
+            background-color: black;
+            font-size: 0.8rem;
+        }
+
+        @keyframes blink {
+            0% {opacity: 0}
+            49%{opacity: 0}
+            50% {opacity: 1}
+        }
+        blink{animation: blink 1s infinite;}
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-12 text-center animate__animated animate__fadeInDown" style="color: #7eeb63">
+            <h1>Welcome to Dev Hour!<blink>▮</blink></h1>
+        </div>
+    </div>
+    <br/>
+    <br /><br />
+    <div class="row">
+        <div class="col-md-12 text-center animate__animated animate__fadeInLeft" style="color: white">
+            <h2>Dev Hour is a place where all us developers can get to know one another.
+            </h2>
+        </div>
+    </div>
+    <br />
+    <br /><br />
+    <div class="row">
+        <div class="col-md-12 text-center animate__animated animate__fadeInRight" style="color: white">
+            <h2>Join the Official Dev
+                Hour Discord below!
+            </h2>
+        </div>
+    </div>
+    <br/>
+    <div id="target"></div> 
+    <br/>
+    <div class="row">
+        <div class="col-md-12 text-center animate__animated animate__fadeIn" style="cursor: pointer" id="deeznuts">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/discord-2752210-2285027.png"/>
+        </div>
+    </div>
+    <script>
+        $("#deeznuts").click(() => {
+            $("#deeznuts").addClass("animate__zoomOutDown");
+            $("#target").html(`
+                <div class="row">
+                    <div class="col-md-12 text-center animate__animated animate__fadeIn animate__delay-1s" style="cursor: pointer" id="deeznuts">
+                       <h1 style="color: white"> <blink>DEV HOUR DEEZ NUTS LMAO</blink></h1>
+                    </div>
+                </div>
+            `);
+        })
+    </script>
+</body>
+</html>
+
